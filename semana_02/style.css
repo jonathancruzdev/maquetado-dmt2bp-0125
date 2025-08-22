@@ -5,10 +5,22 @@
 }
 header {
     padding: 16px;
+    border: 2px solid teal;
+    border-radius: 5px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 header h1 {
     text-align: center;
 }
+
+.foto {
+    width: 200px;
+    border-radius: 50%;
+}
+
 main {
     width: 800px;
     min-height: 600px;
