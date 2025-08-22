@@ -6,6 +6,7 @@
 header {
     padding: 16px;
     border: 2px solid teal;
+    background-color: teal;
     border-radius: 5px;
     
     display: flex;
@@ -45,7 +46,7 @@ footer {
 }
 
 .bg-green {
-    background-color: teal;
+    background-color: rgb(52, 65, 65);
     color: white;
     border-radius: 5px;
     padding-left: 10px;
