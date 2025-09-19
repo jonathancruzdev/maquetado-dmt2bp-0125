@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Web Design</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#main">Inicio</a>
+            </li>
+            <li>
+                <a href="#">Productos</a>
+            </li>
+            <li>
+                <a href="#galeria">Galería</a>
+            </li>
+            <li>
+                <a href="#empresa">Empresa</a>
+            </li>
+            <li>
+                <a href="#">Contactos</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main" class="flex-container">
+        <section id="galeria" class="flex-container">
+            <div class="box">
+                <a href="images/comida_1.jpg" class="glightbox">
+                    <img src="images/resized/comida_1.jpg" alt="Comida 1" class="img-responsive">
+                </a>
+            </div>
+            <div class="box">
+                <a href="images/comida_2.jpg" class="glightbox">
+                    <img src="images/resized/comida_2.jpg" alt="Comida 1" class="img-responsive">
+                </a>
+            </div>
+            <div class="box">
+                <a href="images/comida_3.jpg" target="_blank" class="glightbox">
+                    <img src="images/resized/comida_3.jpg" alt="Comida 1" class="img-responsive">
+                </a>
+            </div>
+            <div class="box">
+                <a href="images/comida_4.jpg" class="glightbox">
+                    <img src="images/resized/comida_4.jpg" alt="Comida 1" class="img-responsive">
+                </a>
+            </div>
+            <div class="box">
+                <a href="images/comida_5.jpg" class="glightbox">
+                    <img src="images/resized/comida_5.jpg" alt="Comida 1" class="img-responsive">
+                </a>
+            </div>
+            <div class="box">
+                <a href="images/comida_6.jpg">
+                    <img src="images/resized/comida_6.jpg" alt="Comida 1" class="img-responsive">
+                </a>
+            </div>
+        </section>
+     
+        <section id="empresa">
+            <div class="row">
+                <div class="col">
+                    <img src="images/resto.jpg" alt="Empresa" class="img-responsive">
+                </div>
+                <div class="col">
+                    <h2>La empresa</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, iste quia recusandae quae alias iure adipisci debitis qui rem fugiat omnis sapiente veritatis, iusto magni tempore, nobis quos veniam nulla.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae saepe, laborum voluptas repellendus accusantium natus ipsa aperiam voluptatibus expedita, eligendi ea accusamus facilis consequuntur sunt maiores doloribus? Qui, rem perferendis!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="col">
+            <img src="" alt="">
+        </div>
+        <div class="col">
+            <div class="materia">
+                <p>DV | Maquetado y Desarrollo Web | 2025</p>
+                <ul class="social">
+                    <li>
+                        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+         const lightbox = GLightbox();
+    </script>
+</body>
+</html>
