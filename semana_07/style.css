@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: rebeccapurple;
+    height: 15vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.flex-container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 16px;
+}
+footer {
+    background-color: rgb(12, 5, 19);
+    min-height: 5vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: teal;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 200px;
+    width: 300px;
+}
+
+.menu-mobile {
+    color: white;
+    font-size: 2rem;
+    display: none;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    position: absolute;
+    left: 10px;
+}
+
+.menu-mobile-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav {
+ background-image: linear-gradient(rebeccapurple, teal);
+    min-height: 10vh;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover {
+    border-bottom: 2px solid rebeccapurple;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+}
+
+.social li a i {
+    color: white;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+#empresa {
+    width: 80vw;
+}
+.row {
+    display: flex;
+}
+
+.col {
+    width: 100%;
+    padding: 2rem;
+}
+
+.slides {
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.slide {
+    width: 50vw;
+    height: 300px;
+    transition: ease-in-out 1s;
+}
+
+.slide:hover {
+    width: 150vw;
+}
+.slide-1{
+    background-color: teal;
+}
+
+.slide-2{
+    background-color: orangered;
+}
+
+.slide-3{
+    background-color: rgb(210, 46, 228);
+}
+
+.slide-4{
+    background-color: rebeccapurple;
+}
+
+.slide-5{
+    background-color: rebeccapurple;
+}
+/* Consulta de Medios Table*/
+ @media (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 10vh;
+    }
+    .box {
+        width: 350px;
+    }
+    #empresa {
+        width: 90vw;
+    }
+    .row {
+        flex-direction: column;
+    }
+} 
+/* Consulta de Medios Mobile */
+
+.visible {
+    display: block;
+}
+
+.oculto {
+    display: none;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+}
+
+@media (max-width: 500px){
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        padding-right: 16px;
+        min-height: 100px;
+    }
+    nav ul {
+        display:none;
+    
+    }
+    nav ul li {
+        text-align: center;
+        padding: 2px;
+    }
+
+    .menu-mobile{
+        display: block;
+    }
+    #empresa {
+        width: 95vw;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .box {
+        width: 400px;
+    }
+    nav ul {
+        flex-direction: column;
+        min-height: 15vh;
+    }
+}
+
+
+
